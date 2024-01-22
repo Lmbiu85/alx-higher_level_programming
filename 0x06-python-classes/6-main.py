@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-Square = __import__('6-square').Square
+print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
 
-my_square_1 = Square(3)
-my_square_1.my_print()
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
+print_matrix_integer(matrix)
 print("--")
-
-my_square_2 = Square(3, (1, 1))
-my_square_2.my_print()
-
-print("--")
-
-my_square_3 = Square(3, (3, 0))
-my_square_3.my_print()
-
-print("--")
+print_matrix_integer()
